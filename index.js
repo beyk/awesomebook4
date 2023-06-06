@@ -14,8 +14,8 @@ const displayBooks = () => {
   books.forEach((item, index) => {
     listOfbook += `<div>
     <p class="name-of-book">${item.title}</p>
-    <p class="author-of-book">${item.author}</p>
-    <button type="button" class="remove-button" id="${index}" onclick="removeBook(${index})">Remove</button>
+    <p class='author-of-book'>${item.author}</p>
+    <button type='button class='remove-button' id='${index}' onclick='removeBook(${index})'>Remove</button>
     <hr>
     </div>`;
   });
