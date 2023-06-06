@@ -129,7 +129,7 @@ npx eslint .
 
 - GitHub: [@Bleu-Yves-Sopoude](https://github.com/Bleu-Yves-Sopoude)
 
-👤 **Ojwang Briton**
+👤 **Asghar Beykmohammadi**
 
 - GitHub: [@beyk](https://github.com/beyk)
 
