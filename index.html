@@ -8,13 +8,23 @@
 </head>
 <body>
    <h1>AwesomeBook</h1>
-   <section id="book_list"></section> 
-   <form>
-    <label for="title">Title</label>
-    <input type="text" id="title" name="title" required></br></br></br>
-    <label for="author">Author</label>
-    <input type="text" id="author" name="author" required></br></br>
-    <button type="submit" id="addBtn">Add</button>
-   </form>
+
+   <section id="book-list"></section>
+
+   <form id="form" method="post">
+
+    <p>
+        <input type="text" placeholder="Title" id="bookname" required>
+    </p>
+    <p>
+        <input type="text" placeholder="Author" id="authorname" required>
+    </p>
+            
+    <button type="submit" class="addbutton">Add</button>
+</form>
+
+
+
+<script src="./index.js"></script>   
 </body>
 </html>
