@@ -1,5 +1,5 @@
 *{
-  background-color: aqua;
+  
 }
 
 body {
@@ -25,6 +25,14 @@ h1 {
   margin-top: 20px;
   text-align: center;
   text-decoration-color: blueviolet;
+}
+
+#book-list div:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#book-list div:nth-child(odd) {
+  background-color: #ffffff;
 }
 
 #bookContainer {
