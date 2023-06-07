@@ -1,5 +1,5 @@
 *{
-  
+  background-color: aquamarine;
 }
 
 body {
@@ -13,9 +13,10 @@ body {
   font-size: 2rem;
 }
 
-#content{
+#content {
   text-decoration: double;
 }
+
 h1 {
   text-align: center;
   margin-top: 20px;
@@ -32,7 +33,7 @@ h1 {
 }
 
 #book-list div:nth-child(odd) {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 #bookContainer {
@@ -41,4 +42,3 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-
