@@ -14,12 +14,12 @@ class AwesomeBook {
 
     let listOfBooks = '';
     this.books.forEach((book, index) => {
-      listOfBooks += `<div>
-        <p class="name-of-book">${book.title}</p>
-        <p class="author-of-book">${book.author}</p>
-        <button type="button" class="remove-button" id="${index}">Remove</button>
-        <hr>
-      </div>`;
+      listOfBooks +=  `<div >
+      <span class="name-of-book">${book.title}</span>&nbsp;
+      <span class="author-of-book">${book.author}</span>&nbsp;
+      <button type="button" class="remove-button" id="${index}">Remove</button>
+      <hr>
+    </div>`;
     });
     this.bookList.innerHTML = listOfBooks;
 
