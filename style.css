@@ -1,6 +1,7 @@
 *{
   background-color: aqua;
 }
+
 body {
   font-family: Georgia, 'Times New Roman', Times, serif, cursive;
   display: flex;
@@ -25,8 +26,6 @@ h1 {
   text-align: center;
   text-decoration-color: blueviolet;
 }
-
-
 
 #bookContainer {
   width: 100%;
