@@ -15,8 +15,8 @@ class AwesomeBook {
     let listOfBooks = '';
     this.books.forEach((book, index) => {
       listOfBooks +=  `<div >
-      <span class="name-of-book">${book.title}</span>&nbsp;
-      <span class="author-of-book">${book.author}</span>&nbsp;
+      <span class="name-of-book">${book.title}</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+      <span class="author-of-book">${book.author}</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
       <button type="button" class="remove-button" id="${index}">Remove</button>
       <hr>
     </div>`;

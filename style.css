@@ -1,5 +1,5 @@
 *{
-  background-color: aqua;
+  
 }
 body {
   font-family: Georgia, 'Times New Roman', Times, serif, cursive;
@@ -26,7 +26,13 @@ h1 {
   text-decoration-color: blueviolet;
 }
 
+#book-list div:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
+#book-list div:nth-child(odd) {
+  background-color: #ffffff;
+}
 
 #bookContainer {
   width: 100%;
