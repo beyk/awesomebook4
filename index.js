@@ -26,7 +26,7 @@ class AwesomeBook {
     this.addRemoveEventListeners();
   }
 
-  clearFields() {
+  clearFields= () =>{
     const title = document.getElementById('bookname');
     const author = document.getElementById('authorname');
 
@@ -62,7 +62,7 @@ class AwesomeBook {
     const removeBtns = document.querySelectorAll('.remove-button');
     removeBtns.forEach((btn) => {
       btn.addEventListener('click', (e) => {
-        const index = parseInt(e.target.id);
+        const index = parseInt(e.target.id, 10);
         this.removeBook(index);
       });
     });
@@ -70,3 +70,4 @@ class AwesomeBook {
 }
 
 const bookManager = new AwesomeBook();
+bookManager.addBook;
