@@ -1,3 +1,5 @@
+let chic;
+
 class AwesomeBook {
   constructor() {
     this.addBookBtn = document.querySelector('.addbutton');
@@ -26,7 +28,7 @@ class AwesomeBook {
     this.addRemoveEventListeners();
   }
 
-  clearFields= () =>{
+  clearFields= () => {
     const title = document.getElementById('bookname');
     const author = document.getElementById('authorname');
 
@@ -70,4 +72,4 @@ class AwesomeBook {
 }
 
 const bookManager = new AwesomeBook();
-bookManager.addBook;
+chic=bookManager.bookList;
