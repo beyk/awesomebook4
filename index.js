@@ -4,9 +4,19 @@ class AwesomeBook {
     this.bookList = document.querySelector('#book-list');
     this.books = [];
 
-    this.displayBooks();
-    this.addEventListeners();
+    this.retrieveBooks().then(() => {
+      this.displayBooks();
+      this.addEventListeners();
+    });
+    
   }
+
+  retrieveBooks() {
+    return new Promise((resolve) => {
+      const storedBooks = localStorage.getItem('books');
+      this.books = storedBooks ? JSON.parse(storedBooks) : [];
+      resolve();
+    });
 
   displayBooks() {
     const storedBooks = localStorage.getItem('books');
@@ -62,7 +72,7 @@ class AwesomeBook {
     const removeBtns = document.querySelectorAll('.remove-button');
     removeBtns.forEach((btn) => {
       btn.addEventListener('click', (e) => {
-        const index = parseInt(e.target.id, 0);
+        const index = parseInt(e.target.id, 10);
         this.removeBook(index);
       });
     });
