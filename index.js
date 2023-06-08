@@ -20,10 +20,11 @@ class AwesomeBook {
   <button type="button" class="remove-button" id="${index}">Remove</button>
   <hr>
 </div>`;
-  });
+    });
     this.bookList.innerHTML = listOfBooks;
 
     this.addRemoveEventListeners();
+  }
 
   clearFields =() => {
     const title = document.getElementById('bookname');
