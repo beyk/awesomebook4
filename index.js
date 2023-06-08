@@ -14,7 +14,7 @@ class AwesomeBook {
 
     let listOfBooks = '';
     this.books.forEach((book, index) => {
-      listOfBooks +=`<div >
+      listOfBooks += `<div >
       <span class='name-of-book'>${book.title}</span>${'&nbsp;'.repeat(10)}
       <span class='author-of-book'>${book.author}</span>${'&nbsp;'.repeat(10)}
       <button type="button" class="remove-button" id="${index}">Remove</button>
@@ -62,7 +62,7 @@ class AwesomeBook {
     const removeBtns = document.querySelectorAll('.remove-button');
     removeBtns.forEach((btn) => {
       btn.addEventListener('click', (e) => {
-        const index = parseInt(e.target.id ,10);
+        const index = parseInt(e.target.id , 10);
         this.removeBook(index);
       });
     });
@@ -70,5 +70,4 @@ class AwesomeBook {
 }
 
 const bookManager = new AwesomeBook();
-bookManager.addBook;
-
+bookManager.addBook();
