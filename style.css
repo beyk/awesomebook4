@@ -1,6 +1,7 @@
 *{
   background-color: aqua;
 }
+
 body {
   font-family: Georgia, 'Times New Roman', Times, serif, cursive;
   display: flex;
@@ -12,9 +13,10 @@ body {
   font-size: 2rem;
 }
 
-#content{
+#content {
   text-decoration: double;
 }
+
 h1 {
   text-align: center;
   margin-top: 20px;
