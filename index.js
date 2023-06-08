@@ -1,4 +1,3 @@
-
 class AwesomeBook {
   constructor() {
     this.addBookBtn = document.querySelector('.addbutton');
