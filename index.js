@@ -26,10 +26,10 @@ class AwesomeBook {
     this.addRemoveEventListeners();
   }
 
-  clearFields = () => {
+  clearFields() {
     const title = document.getElementById('bookname');
     const author = document.getElementById('authorname');
-
+  
     title.value = '';
     author.value = '';
   }
