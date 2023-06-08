@@ -69,4 +69,4 @@ class AwesomeBook {
   }
 }
 
-AwesomeBook.initialize();
+const bookManager = new AwesomeBook();
