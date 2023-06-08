@@ -1,4 +1,3 @@
-let chic;
 
 class AwesomeBook {
   constructor() {
@@ -71,5 +70,4 @@ class AwesomeBook {
   }
 }
 
-const bookManager = new AwesomeBook();
-chic=bookManager.bookList;
+AwesomeBook.initialize();
