@@ -9,7 +9,9 @@ body {
   font-size: 2rem;
 }
 
-
+#content {
+  text-decoration: double;
+}
 
 h1 {
   text-align: center;
