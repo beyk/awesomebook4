@@ -19,7 +19,7 @@ class AwesomeBook {
   <span class='author-of-book'>${book.author}</span>${'&nbsp;'.repeat(10)}
   <button type="button" class="remove-button" id="${index}">Remove</button>
   <hr>
-  </div>`;
+</div>`;
 
     });
     this.bookList.innerHTML = listOfBooks;
