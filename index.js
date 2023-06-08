@@ -4,19 +4,9 @@ class AwesomeBook {
     this.bookList = document.querySelector('#book-list');
     this.books = [];
 
-    this.retrieveBooks().then(() => {
-      this.displayBooks();
-      this.addEventListeners();
-    });
-    
+    this.displayBooks();
+    this.addEventListeners();
   }
-
-  retrieveBooks() {
-    return new Promise((resolve) => {
-      const storedBooks = localStorage.getItem('books');
-      this.books = storedBooks ? JSON.parse(storedBooks) : [];
-      resolve();
-    });
 
   displayBooks() {
     const storedBooks = localStorage.getItem('books');
@@ -80,4 +70,4 @@ class AwesomeBook {
 }
 
 const bookManager = new AwesomeBook();
-bookManager.addBook();
+bookManager.clearFields();
