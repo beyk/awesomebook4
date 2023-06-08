@@ -3,8 +3,7 @@ class AwesomeBook {
     this.addBookBtn = document.querySelector('.addbutton');
     this.bookList = document.querySelector('#book-list');
     this.books = [];
-    this.titleElement = document.getElementById('bookname');
-    this.authorElement = document.getElementById('authorname');
+
     this.displayBooks();
     this.addEventListeners();
   }
@@ -21,6 +20,7 @@ class AwesomeBook {
       <button type="button" class="remove-button" id="${index}">Remove</button>
       <hr>
     </div>`;
+
     });
     this.bookList.innerHTML = listOfBooks;
 
@@ -28,8 +28,11 @@ class AwesomeBook {
   }
 
   clearFields() {
-    this.titleElement.value = '';
-    this.authorElement.value = '';
+    const title = document.getElementById('bookname');
+    const author = document.getElementById('authorname');
+
+    title.value = '';
+    author.value = '';
   }
 
   addBook(title, author) {
@@ -60,7 +63,7 @@ class AwesomeBook {
     const removeBtns = document.querySelectorAll('.remove-button');
     removeBtns.forEach((btn) => {
       btn.addEventListener('click', (e) => {
-        const index = parseInt(e.target.id, 10);
+        const index = parseInt(e.target.id);
         this.removeBook(index);
       });
     });
@@ -68,4 +71,3 @@ class AwesomeBook {
 }
 
 const bookManager = new AwesomeBook();
-bookManager.addBook();
