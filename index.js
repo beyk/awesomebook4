@@ -1,5 +1,3 @@
-import luxon from 'luxon';
-
 const addNewBookLink = document.getElementById('add-new-book-link');
 const bookListLink = document.getElementById('book-list-link');
 const contactLink = document.getElementById('contact-link');
@@ -8,7 +6,7 @@ const addNewBookSection = document.getElementById('form');
 const contactSection = document.getElementById('contact');
 
 // Add Date by Luxon
-const today = luxon.DateTime.local();
+const today = new Date();
 document.getElementById('date').innerHTML = today;
 // hide book list and contact sections by default
 bookListSection.style.display = 'none';
