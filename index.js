@@ -6,7 +6,7 @@ const addNewBookSection = document.getElementById('form');
 const contactSection = document.getElementById('contact');
 
 // Add Date by Luxon
-const today = Luxon.DateTime.local();
+const today = luxon.DateTime.local();
 document.getElementById('date').innerHTML = today;
 // hide book list and contact sections by default
 bookListSection.style.display = 'none';
@@ -42,7 +42,7 @@ class AwesomeBook {
     this.authorElement = document.getElementById('authorname');
     this.displayBooks();
     this.addEventListeners();
-    }
+  }
 
   displayBooks() {
     const storedBooks = localStorage.getItem('books');

@@ -88,7 +88,6 @@ nav {
 
 .menu ul li:not(:last-child)::after {
   content: "|";
-
   margin-left: 10px;
 }
 
