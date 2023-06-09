@@ -94,3 +94,20 @@ nav {
 .menu ul li a:hover {
   color: rgb(79, 67, 240);
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  height: 10%;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
