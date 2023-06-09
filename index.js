@@ -36,7 +36,6 @@ contactLink.addEventListener('click', (e) => {
 });
 
 class AwesomeBook {
-<<<<<<< HEAD
     constructor() {
         this.addBookBtn = document.querySelector('.addbutton');
         this.bookList = document.querySelector('#book-list');
@@ -46,22 +45,11 @@ class AwesomeBook {
         this.displayBooks();
         this.addEventListeners();
     }
-=======
-  constructor() {
-    this.addBookBtn = document.querySelector('.addbutton');
-    this.bookList = document.querySelector('#book-list');
-    this.books = [];
-
-    this.displayBooks();
-    this.addEventListeners();
-  }
->>>>>>> 5a2c53e1f3210e9b3d4ce33a90dfd85f94244378
 
     displayBooks() {
         const storedBooks = localStorage.getItem('books');
         this.books = storedBooks ? JSON.parse(storedBooks) : [];
 
-<<<<<<< HEAD
         let listOfBooks = '';
         this.books.forEach((book, index) => {
             listOfBooks += `<div >
@@ -72,36 +60,14 @@ class AwesomeBook {
             </div>`;
         });
         this.bookList.innerHTML = listOfBooks;
-=======
-    let listOfBooks = '';
-    this.books.forEach((book, index) => {
-      listOfBooks += `<div>
-        <p class="name-of-book">${book.title}</p>
-        <p class="author-of-book">${book.author}</p>
-        <button type="button" class="remove-button" id="${index}">Remove</button>
-        <hr>
-      </div>`;
-    });
-    this.bookList.innerHTML = listOfBooks;
->>>>>>> 5a2c53e1f3210e9b3d4ce33a90dfd85f94244378
 
         this.addRemoveEventListeners();
     }
 
-<<<<<<< HEAD
     clearFields() {
         this.titleElement.value = '';
         this.authorElement.value = '';
     }
-=======
-  clearFields = () => {
-    const title = document.getElementById('bookname');
-    const author = document.getElementById('authorname');
-
-    title.value = '';
-    author.value = '';
-  }
->>>>>>> 5a2c53e1f3210e9b3d4ce33a90dfd85f94244378
 
     addBook(title, author) {
         this.books.push({ title, author });
@@ -139,8 +105,4 @@ class AwesomeBook {
 }
 
 const bookManager = new AwesomeBook();
-<<<<<<< HEAD
 bookManager.clearFields();
-=======
-bookManager.clearFields();
->>>>>>> 5a2c53e1f3210e9b3d4ce33a90dfd85f94244378
