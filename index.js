@@ -100,4 +100,4 @@ class AwesomeBook {
 }
 
 const bookManager = new AwesomeBook();
-bookManager.addBook();
+bookManager.clearFields();
