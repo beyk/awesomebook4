@@ -5,6 +5,11 @@ const bookListSection = document.getElementById('book-list');
 const addNewBookSection = document.getElementById('form');
 const contactSection = document.getElementById('contact');
 
+
+//Add Date by Luxon
+const today = luxon.DateTime.local();
+document.getElementById('date').innerHTML = today;
+console.log(today);
 // hide book list and contact sections by default
 bookListSection.style.display = 'none';
 contactSection.style.display = 'none';

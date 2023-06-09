@@ -1,7 +1,6 @@
 body {
   font-family: Georgia, 'Times New Roman', Times, serif, cursive;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
@@ -47,7 +46,6 @@ header {
   align-items: center;
   color: black;
   padding: 10px;
-  position: fixed;
   top: 0;
   z-index: 1;
   width: 100%;
@@ -110,4 +108,10 @@ footer {
   margin: 0 auto;
   box-sizing: border-box;
   border: 1px solid black;
+}
+#date {
+  text-align: right;
+  margin-left: 40%;
+  font-size: 1rem;
+  font-family: auto;
 }
