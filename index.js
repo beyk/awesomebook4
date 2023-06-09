@@ -1,9 +1,45 @@
+const addNewBookLink = document.getElementById('add-new-book-link');
+const bookListLink = document.getElementById('book-list-link');
+const contactLink = document.getElementById('contact-link');
+const bookListSection = document.getElementById('book-list');
+const addNewBookSection = document.getElementById('form');
+const contactSection = document.getElementById('contact');
+
+// Add Date by Luxon
+const today = new Date();
+document.getElementById('date').innerHTML = today;
+// hide book list and contact sections by default
+bookListSection.style.display = 'none';
+contactSection.style.display = 'none';
+
+addNewBookLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  addNewBookSection.style.display = 'block';
+  bookListSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+
+bookListLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  addNewBookSection.style.display = 'none';
+  bookListSection.style.display = 'block';
+  contactSection.style.display = 'none';
+});
+
+contactLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  addNewBookSection.style.display = 'none';
+  bookListSection.style.display = 'none';
+  contactSection.style.display = 'block';
+});
+
 class AwesomeBook {
   constructor() {
     this.addBookBtn = document.querySelector('.addbutton');
     this.bookList = document.querySelector('#book-list');
     this.books = [];
-
+    this.titleElement = document.getElementById('bookname');
+    this.authorElement = document.getElementById('authorname');
     this.displayBooks();
     this.addEventListeners();
   }
@@ -14,24 +50,21 @@ class AwesomeBook {
 
     let listOfBooks = '';
     this.books.forEach((book, index) => {
-      listOfBooks += `<div>
-        <p class="name-of-book">${book.title}</p>
-        <p class="author-of-book">${book.author}</p>
-        <button type="button" class="remove-button" id="${index}">Remove</button>
-        <hr>
-      </div>`;
+      listOfBooks += `<div >
+            <span class='name-of-book'>${book.title}</span>${'&nbsp;'.repeat(10)}
+            <span class='author-of-book'>${book.author}</span>${'&nbsp;'.repeat(10)}
+            <button type="button" class="remove-button" id="${index}">Remove</button>
+            <hr>
+            </div>`;
     });
     this.bookList.innerHTML = listOfBooks;
 
     this.addRemoveEventListeners();
   }
 
-  clearFields = () => {
-    const title = document.getElementById('bookname');
-    const author = document.getElementById('authorname');
-
-    title.value = '';
-    author.value = '';
+  clearFields() {
+    this.titleElement.value = '';
+    this.authorElement.value = '';
   }
 
   addBook(title, author) {
